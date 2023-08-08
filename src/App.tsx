@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './Components/Navbar';
+import MainPage from './Pages/MainPage';
+import { Route,Routes } from 'react-router-dom';
+import Men from './Pages/Men';
+import Women from './Pages/Women';
+import Cart from './Pages/Cart';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container mx-auto h-screen">
+      <Navbar />
+      <Routes>
+        <Route path='/' element={ <MainPage/> } />
+        <Route path='/men' element={ <Men/> } />
+        <Route path='/women' element={<Women/>} />
+        <Route path='/cart' element={<Cart/>} />
+      </Routes>
+      <div className='h-20' ></div>
     </div>
   );
 }
