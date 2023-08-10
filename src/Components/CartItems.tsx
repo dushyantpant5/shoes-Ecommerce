@@ -33,7 +33,7 @@ const CartItems:React.FC<ICartItems> = ({id,name,price,img,noOfItems}) => {
   }
   
   return (
-    <div className='flex justify-between w-9/12 items-center p-4 bg-slate-200 ' >
+    <div className='flex justify-between w-9/12 items-center p-4 bg-slate-200 m-4 ' >
         <img src={img} height={80} width={80} alt="" />
         <span>{name}</span>
         <span>{`₹${price} x ${noOfItems}`}</span>
