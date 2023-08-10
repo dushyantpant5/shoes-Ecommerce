@@ -1,26 +1,21 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
-import { CartState,ICartState } from '../context/CartContext';
 
 interface IShoeData{
+    id:string;
     name: string;
     price: number;
-    itemsLeft: number;
     img: string;
+    noOfItems?:number
+    handleClick:(id:string)=> void;
 }
 
 
 const dollarToIndianValue = 82;
 
-const ShoeCard: React.FC<IShoeData> = ({name,price,itemsLeft,img}) => {
-    
-    const {setPrice }: ICartState = useContext(CartState) as ICartState;
+const ShoeCard: React.FC<IShoeData> = ({id,name,price,img,handleClick}) => {
 
-    const handleClick = () =>{
-        setPrice((existingPrice)=>{
-            return existingPrice+(price*dollarToIndianValue)
-        })
-    }
+    const handleButton = (id:string) =>{handleClick(id)}
   
     return (
     <div className='flex flex-col items-start bg-slate-300 rounded-lg hover:scale-105 delay-100 ' >
@@ -33,13 +28,10 @@ const ShoeCard: React.FC<IShoeData> = ({name,price,itemsLeft,img}) => {
                     {name}
                 </span>
                 <span>
-                    In Stock:{itemsLeft}
-                </span>
-                <span>
                     MRP : ₹{price*dollarToIndianValue}
                 </span>
            </div>
-           <button  onClick={()=>handleClick()} className='pr-5'> <ShoppingBagIcon style={{fontSize: 20}} /> </button>
+           <button onClick={()=>handleButton(id)} className='pr-5'> <ShoppingBagIcon style={{fontSize: 20}} /> </button>
         </div>
     </div>
   )
