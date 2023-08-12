@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { useContext } from 'react'
 import { CartState, ICartState } from '../context/CartContext'
 import CartItems from '../Components/CartItems'
@@ -6,7 +6,7 @@ import OrderSummary from '../Components/OrderSummary'
 
 const Cart = () => {
 
-  const { price, setPrice, cartItems } = useContext(CartState) as ICartState;
+  const { setPrice, cartItems } = useContext(CartState) as ICartState;
 
   useEffect(() => {
     let newPrice = 0;
@@ -24,8 +24,7 @@ const Cart = () => {
 
   }, [cartItems])
 
-  console.log(cartItems.length)
-
+  
   return (
     <div>
       <h1 className='text-7xl' >Cart</h1><br />
@@ -33,7 +32,7 @@ const Cart = () => {
       {
 
         
-        cartItems.length!==0?<div className='flex ' >
+        cartItems.length!==0?<div className='flex flex-col sm:flex-row ' >
           
           <div className='flex-1 flex-col ' >
 

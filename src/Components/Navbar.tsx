@@ -20,7 +20,13 @@ const Navbar = () => {
               Women
             </NavLink>
 
-            <a href="/">Kids</a>
+            <NavLink  className={({isActive})=>
+                isActive?"active":"hover:scale-110"
+                  } to="/kids">
+              Kids
+            </NavLink>
+
+           
         </div>
        <Link to="/cart"> <ShoppingBagIcon style={{fontSize: 30}} /> </Link>
     </div>

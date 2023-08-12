@@ -1,50 +1,43 @@
 {
   "men-shoes":{
-    "air-jordan-3-valor-blue": {
-      "name": "VALOUR BLUE",
-      "price":72,
-      "itemsLeft":3,
+    "CW2288-111": {
+      "name": "Nike Air Force 1 '07",
+      "price":7495,
       "img":
-             "https://secure-images.nike.com/is/image/DotCom/CT8532_104_A_PREM?$SNKRS_COVER_WD$&align=0,1"
+            "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-shoes-WrLlWX.png"
     },
-    "jordan-mars-270-london": {
-      "name": "JORDAN MARS 270 LONDON",
-      "price":100,
-      "itemsLeft":5,
+    " FD9082-101": {
+      "name": "Nike Air Max 1",
+      "price":12795,
       "img":
-        "https://secure-images.nike.com/is/image/DotCom/CV3042_001_A_PREM?$SNKRS_COVER_WD$&align=0,1"
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/501b85a2-8e91-4348-b75f-609c18b2bb51/air-max-1-shoes-ZCSX34.png"
     },
-    "air-jordan-1-zoom-racer-blue": {
-      "name": "RACER BLUE",
-      "price":120,
-      "itemsLeft":0,
+    " DZ2617-800": {
+      "name": "Nike Metcon 9",
+      "price":12795,
       "img":
-        "https://secure-images.nike.com/is/image/DotCom/CK6637_104_A_PREM?$SNKRS_COVER_WD$&align=0,1"
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/485358b3-c1c5-41d2-8598-f8baa78a23f5/metcon-9-workout-shoes-ldMsxB.png"
     },
-    "cosmic-unity-basketball-shoe": {
-      "name": "RACER BLUE",
-      "price":72,
-      "itemsLeft":10,
+    "DV6796-116": {
+      "name": "Jordan Retro 6 G NRG",
+      "price":19695,
       "img":
-        "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/214f6074-9556-4d05-822c-17d2eb946875/cosmic-unity-basketball-shoe-nDHKr4.png"
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/81c57e35-2f71-467d-89df-3b73fc8c3608/jordan-retro-6-g-nrg-golf-shoes-wrVjdt.png"
     },
-    "nike-react-infinity-run-flyknit":{
-      "name":"VANS",
-      "price":90,
-      "itemsLeft":7,
-      "img":"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-665455a5-45de-40fb-945f-c1852b82400d/react-infinity-run-flyknit-mens-running-shoe-zX42Nc.jpg"
+    "DX5050-200":{
+      "name":"Nike Invincible 3 By You",
+      "price":19295,
+      "img":"https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/b10e0c07-9dab-4f47-aa7d-0cb64f435491/nike-invincible-run-3-by-you-custom-shoes.png"
     },
-    "nike-react-miler":{
-      "name":"NIKE",
-      "price":30,
-      "itemsLeft":1,
-      "img":"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/i1-5cc7de3b-2afc-49c2-a1e4-0508997d09e6/react-miler-mens-running-shoe-DgF6nr.jpg"
+    " DV4982-641":{
+      "name":"Air Jordan 5 x DJ Khaled",
+      "price":19277,
+      "img":"https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9c3a7b17-13f3-48da-a681-ff500b46cf6e/air-jordan-5-dj-khaled-shoes-tQrmGS.png"
     },   
-    "michael-feburary-sk8-hi":{
-      "name":"REEBOK",
-      "price":56,
-      "itemsLeft":10,
-      "img":"https://images.vans.com/is/image/Vans/MV122M-HERO?$583x583$"
+    " DV1748-601":{
+      "name":"Air Next Chapter",
+      "price":18395,
+      "img":"https://static.nike.com/a/images/t_prod_ss/w_640,c_limit,f_auto/4e46bd9c-791f-4a81-8899-c6860bb8de08/air-jordan-1-next-chapter-dv1748-601-release-date.jpg"
     }
   },
   "women-shoes":{

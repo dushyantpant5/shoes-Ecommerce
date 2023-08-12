@@ -11,7 +11,7 @@ interface IShoeData{
 }
 
 
-const dollarToIndianValue = 82;
+
 
 const ShoeCard: React.FC<IShoeData> = ({id,name,price,img,handleClick}) => {
 
@@ -28,7 +28,7 @@ const ShoeCard: React.FC<IShoeData> = ({id,name,price,img,handleClick}) => {
                     {name}
                 </span>
                 <span>
-                    MRP : ₹{price*dollarToIndianValue}
+                    MRP : ₹{price}
                 </span>
            </div>
            <button onClick={()=>handleButton(id)} className='pr-5'> <ShoppingBagIcon style={{fontSize: 20}} /> </button>

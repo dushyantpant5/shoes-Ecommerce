@@ -25,7 +25,7 @@ const Women:React.FC = () => {
       const newItem = {
         id: id,
         name:womenShoesList[id].name,
-        price: womenShoesList[id].price*82,
+        price: womenShoesList[id].price,
         img: womenShoesList[id].img,
         noOfItems:1
       };
