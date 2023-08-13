@@ -9,9 +9,9 @@ const OrderSummary = () => {
         
         const pricePayload = {
             price:price ? price>=10000?(price-(price*0.15)):price:0
-        }
+        }   
 
-        const response = await fetch('api/stripe/create-checkout-session', {
+        const response = await fetch('https://nike-ecommerce-backend.onrender.com/api/stripe/create-checkout-session', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
@@ -23,6 +23,21 @@ const OrderSummary = () => {
         {
             const data = await response.json()
             const url = data.url;
+
+            window.location.href = url;
+        }
+    }
+
+    const handleClick =async () => {
+        const response = await fetch('https://nike-ecommerce-backend.onrender.com/test', {
+            method: 'GET',
+          });
+
+        if(response)
+        {
+            const data = await response.json()
+            const url = data.url;
+            console.log(url)
 
             window.location.href = url;
         }
@@ -46,6 +61,7 @@ const OrderSummary = () => {
         </div>
 
         <button onClick={()=>handlePlaceOrder()} className='bg-gray-500 w-full p-4 rounded-sm ' >Place Order</button>
+        <button onClick={()=>handleClick()} >Test Click</button>
 
     </div>
   )
