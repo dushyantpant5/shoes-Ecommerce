@@ -11,7 +11,7 @@ const OrderSummary = () => {
             price:price ? price>=10000?(price-(price*0.15)):price:0
         }
 
-        const response = await fetch(`api/stripe/create-checkout-session`, {
+        const response = await fetch('api/stripe/create-checkout-session', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
