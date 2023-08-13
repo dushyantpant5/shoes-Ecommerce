@@ -3,8 +3,6 @@ import { CartState } from '../context/CartContext'
 
 const OrderSummary = () => {
     
-   (console.log(process.env.REACT_APP_BACKEND_DEV_URL))
-
     const {price} = useContext(CartState)
 
     const handlePlaceOrder = async () => {
