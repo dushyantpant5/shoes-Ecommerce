@@ -28,21 +28,6 @@ const OrderSummary = () => {
         }
     }
 
-    const handleClick =async () => {
-        const response = await fetch('https://nike-ecommerce-backend.onrender.com/test', {
-            method: 'GET',
-          });
-
-        if(response)
-        {
-            const data = await response.json()
-            const url = data.url;
-            console.log(url)
-
-            window.location.href = url;
-        }
-    }
-
     return (
     <div className= 'flex flex-col gap-5 items-start p-4 ' >
         <h1 className='text-3xl' >Order Summary</h1>
@@ -61,8 +46,6 @@ const OrderSummary = () => {
         </div>
 
         <button onClick={()=>handlePlaceOrder()} className='bg-gray-500 w-full p-4 rounded-sm ' >Place Order</button>
-        <button onClick={()=>handleClick()} >Test Click</button>
-
     </div>
   )
 }
