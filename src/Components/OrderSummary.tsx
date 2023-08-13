@@ -3,6 +3,8 @@ import { CartState } from '../context/CartContext'
 
 const OrderSummary = () => {
     
+   (console.log(process.env.REACT_APP_BACKEND_DEV_URL))
+
     const {price} = useContext(CartState)
 
     const handlePlaceOrder = async () => {
@@ -11,7 +13,7 @@ const OrderSummary = () => {
             price:price ? price>=10000?(price-(price*0.15)):price:0
         }
 
-        const response = await fetch("http://localhost:3300/api/stripe/create-checkout-session", {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_DEV_URL||process.env.REACT_APP_BACKEND_URL}api/stripe/create-checkout-session`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
